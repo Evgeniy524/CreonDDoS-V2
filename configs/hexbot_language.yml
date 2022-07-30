@@ -1,0 +1,12 @@
+HexBot: 
+  Roles: 
+    Admin: 
+      Title: "ADMIN"
+      Description: "admin"
+    Premium: 
+      Title: "PREMIUM"
+      Description: "premium"
+    Basic: 
+      Title: "BASIC"
+      Description: "basic"
+  

@@ -1,0 +1,399 @@
+HexBot:
+  Config: 
+    Colour: 
+      Default: "#FBE8D6"
+      Success: "#04FBB1"
+      Error: "#FB066D"
+      Warning: "#FB8A06"
+      Custom: "#01B0FB"
+    Footer: 
+      Text: "HexBot | Author: CCS_LT#9103"
+      Icon: "https://i.imgur.com/jOuUXqE.gif"
+  
+  Events: 
+    InvalidChannel: 
+      Title: "❌ INVALID CHANNEL"
+      Colour: "{error_colour}"
+      Description: "**[1] Content:**\n> You cannot do this at this **channel**. Please\n> execute commands on __authorized channels__!\n**[2] Allowed Channels:**\n> {allowed_channels}"
+      Thumbnail: ""
+      Image: ""
+      TimeStamp: true
+      Author:
+        Name: ""
+        Icon: ""
+        URl: "https://discord.js.org"
+      Footer:
+        Text: "{footer_text}"
+        Icon: "{footer_icon}"
+      Fields: []
+    ErrorCommand:
+      Title: "🔴 THE COMMAND IS ERROR"
+      Colour: "{error_colour}"
+      Description: "**[1] Content:**\n> There was an __error__ with the command you\n> just **used**! Check the console for *details*!"
+      Thumbnail: ""
+      Image: ""
+      TimeStamp: true
+      Author:
+        Name: ""
+        Icon: ""
+        URl: "https://discord.js.org"
+      Footer:
+        Text: "{footer_text}"
+        Icon: "{footer_icon}"
+      Fields: []
+    CommandDisabled: 
+      Title: "🔴 COMMAND HAS BEEN DISABLED"
+      Colour: "{error_colour}"
+      Description: "**[1] Content:**\n> The __command__ you just used has been **disabled**\n> by the administrator. Enable in *configuration!*"
+      Thumbnail: ""
+      Image: ""
+      TimeStamp: true
+      Author:
+        Name: ""
+        Icon: ""
+        URl: "https://discord.js.org"
+      Footer:
+        Text: "{footer_text}"
+        Icon: "{footer_icon}"
+      Fields: []
+    OnwerOnly: 
+      Title: "🙅 ONLY OWNER USE ONLY"
+      Colour: "{error_colour}"
+      Description: "**[1] Content:**\n> This command can only be __executed __\n> by the owner of **HexBot**.Check out\n> the list of *owners* right below!\n**[2] List:**\n> {owner_list}"
+      Thumbnail: ""
+      Image: ""
+      TimeStamp: true
+      Author:
+        Name: ""
+        Icon: ""
+        URl: "https://discord.js.org"
+      Footer:
+        Text: "{footer_text}"
+        Icon: "{footer_icon}"
+      Fields: []
+    CoolDowns: 
+      Title: "🔗 PLEASE LIMIT SPAM"
+      Colour: "{error_colour}"
+      Description: "**[1] Content:**\n> We've seen you're using __statements__ too\n> often. Please **refrain** from spamming or\n> you will be punished! Thanks your!\n**[2] Notice:**\n> You can use the *command* again later!\n> ```{cooldowns_ms}```"
+      Thumbnail: ""
+      Image: ""
+      TimeStamp: true
+      Author:
+        Name: ""
+        Icon: ""
+        URl: "https://discord.js.org"
+      Footer:
+        Text: "{footer_text}"
+        Icon: "{footer_icon}"
+      Fields: []
+  Roles:
+    CommandRequire: 
+      Title: "❌ {title-role_required} ROLE REQUIREMENTS"
+      Colour: "{error_colour}"
+      Description: "**[1] Content:**\n> You need to have one of the roles of __{role_required}__\n> *to be able to use this command.* You can see\n> the list of roles that can use this **command**!\n**[2] Role List:**\n> {role_list}"
+      Thumbnail: ""
+      Image: ""
+      TimeStamp: true
+      Author:
+        Name: ""
+        Icon: ""
+        URl: "https://discord.js.org"
+      Footer:
+        Text: "{footer_text}"
+        Icon: "{footer_icon}"
+      Fields: []
+    MethodsRequire: 
+      Title: "❌ {title-role_required} ROLE REQUIREMENTS"
+      Colour: "{error_colour}"
+      Description: "**[1] Content:**\n> You need to have one of the roles of __{role_required}__\n> *to be able to use this method.* You can see\n> the list of roles that can use this **method**!\n**[2] Role List:**\n> {role_list}"
+      Thumbnail: ""
+      Image: ""
+      TimeStamp: true
+      Author:
+        Name: ""
+        Icon: ""
+        URl: "https://discord.js.org"
+      Footer:
+        Text: "{footer_text}"
+        Icon: "{footer_icon}"
+      Fields: []
+  
+  Commands: 
+    Stop: 
+      Confirm: 
+        Title: "🌟 PLEASE CONFIRM THE STOP"
+        Colour: "{default_colour}"
+        Description: "**[1] Content:**\n> To proceed with __stopping__ the attacks.\n> Please **select** the options below!\n**[2] Options:**"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: 
+          - Title: "✅ __**Accept**__"
+            Description: "```Green Button```"
+            Inline: true
+          - Title: "❌ __**Cancel**__"
+            Description: "```Red Button```"
+            Inline: true
+      Success: 
+        Title: "✅ STOPPED SUCCESS"
+        Colour: "{success_colour}"
+        Description: "**[1] Content:**\n> One person **executed** the stop command\n> All attacks have been __stopped__ successfully!\n**[2] Information:**\n> __User:__ {user_tag}\n> (`{user_id}`)"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: []
+    Update:  
+      AutoUpdate: 
+        Title: "<a:done:1000738306251821146> AUTOMATIC UPDATED PROXY"
+        Colour: "{success_colour}"
+        Description: "**[1] Content:**\n> Proxy has been updated **successfully**. You can\n> check out the __information__ about this update!\n> \n> Updated once every `{update_time}` minutes!\n**[2] Information:**\n> __**Updated By:**__ {client_tag}\n> (`{client_id}`)\n> __**File Name:**__ `{file_name}`"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: 
+          - Title: "<:proxy:1000349584251420692> __**Proxy Amount:**__"
+            Description: "```{proxies} Proxies```"
+            Inline: true
+      MissingURL: 
+        Title: "<a:alert:1000337855555588188> PLEASE ENTER THE URL"
+        Colour: "{error_colour}"
+        Description: "**[1] Content:**\n> You haven't fully __filled__ in the **options**!\n> Please enter the URL for the *proxy update*!\n**[2] Notice:**\n> You need to enter the __URL__ with a correct\n> **format** and get the *right results*! Thanks"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: []
+      MissingURLInConfig: 
+        Title: "<a:alert:1000337855555588188> ENTER URL IN CONFIG"
+        Colour: "{error_colour}"
+        Description: "**[1] Content:**\n> You haven't fully __filled__ in the **config**!\n> Please enter the URL for the *proxy*\n> *update* in to the configuration file!\n**[2] Notice:**\n> You need to enter the __URL__ with a correct\n> **format** and get the *right results*! Thanks"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: []
+      InvalidURL: 
+        Title: "<a:alert:1000337855555588188> INVALID PROXY URL"
+        Colour: "{error_colour}"
+        Description: "**[1] Content:**\n> The __URL__ you just **entered** has an\n> *invalid format*. Please check again!\n**[2] Information:**"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: 
+          - Title: "<a:proxy2:1000352673645723812> __**URL**__"
+            Description: "[URL Just Entered]({url})"
+            Inline: true
+      Loading: 
+        Title: "<a:botloop:1000733944062431313> GETTING PROXY INFORMATION"
+        Colour: "{default_colour}"
+        Description: "**[1] Content:**\n> We are __conducting__ testing as well as obtaining\n> data of **Proxy**. This process may *take a while*! "
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: []
+      Success: 
+        Title: "<a:done:1000738306251821146> UPDATED PROXY SUCCESS"
+        Colour: "{success_colour}"
+        Description: "**[1] Content:**\n> Proxy has been updated **successfully**. You can\n> check out the __information__ about this update!\n**[2] Information:**\n> __**Updated By:**__ {user_tag}\n> (`{user_id}`)\n> __**File Name:**__ `{file_name}`"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: 
+          - Title: "<:proxy:1000349584251420692> __**Proxy Amount:**__"
+            Description: "```{proxies} Proxies```"
+            Inline: true
+    Crash: 
+      InvalidChannel: 
+        Title: "❌ INVALID CRASH ROOM"
+        Colour: "{error_colour}"
+        Description: "**[1] Content:**\n> You cannot use __attack__ commands on this\n> channel.  Use in the **allowed** channels below!\n**[2] Allowed Channels:**\n> {allowed_channels}"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: []
+      BlackListHost: 
+        Title: "❌ THIS HOST IS CURRENTLY BANNED"
+        Colour: "{error_colour}"
+        Description: "**[1] Content:**\n> This address is __currently__ on HexBot's restricted\n> **blacklist**. Please use a *different* ip address!\n**[2] Information:**\n> __IP Address:__\n> ```{ip_address}```"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: []
+      InvalidVersion: 
+        Title: "❌ INVALID VERSION CODE"
+        Colour: "{error_colour}"
+        Description: "**[1] Content:**\n> The version code you __entered__ is invalid or does not\n> exist. You can **see** a list of version codes *by using*!\n> ```/{protocols_cmd}```"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: []
+      InvalidMethods: 
+        Title: "❌ INVALID CRASH METHODS"
+        Colour: "{error_colour}"
+        Description: "**[1] Content:**\n> The id of methds you __entered__ is invalid or does not\n> exist. You can **see** a list of methods id *by using*!\n> ```/{methods_cmd}```"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: []
+      MethodsDisabled: 
+        Title: "❌ METHODS HAS BEEN DISABLED"
+        Colour: "{error_colour}"
+        Description: "**[1] Content:**\n> The __method__ you just entered has been\n> **disabled** in the config. If you are admin\n> then  *enable it or else use another method*!\n**[2] Informaiton:**\n> __**Method:**__ `{method_name}`\n> ```{method_id}```"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: []
+      TimeForRole: 
+        Title: "⏳ INVALID TIME FOR CRASH"
+        Colour: "{error_colour}"
+        Description: "**[1] Content:**\n> The number of __times__ in seconds that you\n> entered *isn't valid*. It's too little for your **role**!\n**[2] Notice:**\n> You can look through your minimum\n> as well as your maximum time limits!"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: 
+          - Title: "⌛ __**Min Time**__"
+            Description: "```{min_time} Seconds```"
+            Inline: true
+          - Title: "⏳ __**Max Time**__"
+            Description: "```{max_time} Seconds```"
+            Inline: true
+      SendAttack: 
+        Title: "<a:partyrobot:1002759780751900732> ATTACK HAS BEEN STARTED"
+        Colour: "{default_colour}"
+        Description: "**[1] Information:**\n> __**Attack By:**__ {user_tag}\n> (`{user_id}`)"
+        Thumbnail: "{target_icon}"
+        Image: "{target_resolver}"
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: 
+          - Title: "📡 __**Host**__"
+            Description: "```{host}:{port}```"
+            Inline: true
+          - Title: "💥 __**Method**__"
+            Description: "```{method_name} ({method_type})```"
+            Inline: true
+          - Title: "🔌 __**Version**__"
+            Description: "```{version} ({version_code})```"
+            Inline: true
+          - Title: "👻 __**CPS & Time**__"
+            Description: "```{cps} CPS | {time} Seconds```"
+            Inline: true
+      AttackStop: 
+        Title: "🚨 ATTACK HAS BEEN STOPPED"
+        Colour: "{success_colour}"
+        Description: "**[1] Content:**\n> This __attack__ has now been **stopped**!\n**[2] Information:**\n> __**Attack By:**__ {user_tag}\n> (`{user_id}`)"
+        Thumbnail: "{user_icon}"
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: []
+
+        

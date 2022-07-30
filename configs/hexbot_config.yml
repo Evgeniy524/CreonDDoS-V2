@@ -1,0 +1,122 @@
+HexBot: 
+  General: 
+    Client: "HexBot"
+    # Don't touch it
+    Version: "1.0"
+    # Enter your bot token here
+    Token: ""
+  
+  Activity:
+    Status: "idle" # online, idle, dnd and invisible
+    Message: "/help | 👻"
+    # Placeholder: {uptime}, {members}, {servers}, {channels}, {emojis}
+    Messages:
+      - "100% Power | 👻"
+      - "/help | 👻"
+      - "CCS_LT#9103 | 👻"
+      - "/ping | 👻"
+    # "PLAYING", "STREAMING", "WATCHING", "LISTENING" and "CUSTOM_STATUS"
+    Type: "PLAYING" 
+    # The streaming url of activity 
+    # If you set the type = STREAMING
+    StreamingURL: "https://www.twitch.tv/hexbot" 
+    RandomStatus: true
+    # In seconds
+    Interval: 10
+
+  Guild:
+    # Enter your guild id here!
+    ID: ""
+    # List of owner ids!
+    Owner: 
+      - ""
+      
+    Channels:
+      # These channels allow you to use commands in it!
+      WhiteListRoom: 
+        - ""
+        - ""
+      # Channels that allow the use of the command (/crash)
+      CrashRoom: 
+        - ""
+      # These channels notify the proxy auto update!
+      # Need AutoUpdate: true to work!
+      UpdateRoom: 
+        - ""
+    
+    # Explain the role of commands and methods!
+    # Role priority: Admin -> Premium -> Basic
+    # 
+    # When Role: Basic -> All 3 role types can be used (Admin, Premium, Basic)
+    # When Role: Premium -> All 2 role types can be used (Admin, Premium)
+    # When Role: Admin -> All 1 role types can be used (Admin)
+    Roles:
+      # List admin role ids
+      Admin: 
+        - ""
+      # List premium role ids
+      Premium: 
+        - ""
+      # List basic role ids
+      Basic: 
+        - ""
+  
+  Update: 
+    # Should update on startup be enabled!
+    # If enabled, it will update itself every time you start up
+    UpdateOnStartUp: false
+    # Should the auto-update feature be enabled?
+    AutoUpdate: true
+    # Time automatically updated each time. In seconds!
+    Time: 900 
+    # Mode of update:
+    # USER -> User needs to enter URL to update!
+    # URL -> Use the URL available in the config!
+    # BOTH -> If a user enters a URL, that user's URL will be used!
+    #  If the user does not enter the URL, the URL available in the configuration will be used!
+    Mode: BOTH
+    # Proxy file name
+    FileName: "proxies.txt"
+    # Proxy update url
+    URL: "https://api.openproxylist.xyz/socks4.txt"
+  
+  # This feature will automatically download java for bot, very useful when using on host/node
+  AutoDownloadJava: 
+    # Should java auto-download feature be enabled!
+    Enabled: true
+    # URL to download java
+    URL: "https://builds.openlogic.com/downloadJDK/openlogic-openjdk/8u262-b10/openlogic-openjdk-8u262-b10-linux-x64.tar.gz"
+    
+  Buttons: 
+    # Don't change the CustomID!
+    Commands: 
+      Stop: 
+        Confirm: 
+          - Label: "Accept"
+            Style: "SUCCESS"
+            Emoji: "1000711650296463360"
+            CustomID: "stopconfirm-accept"
+          - Label: "Cancel"
+            Style: "DANGER"
+            Emoji: "1000337855555588188"
+            CustomID: "stopconfirm-cancel" 
+      Crash: 
+        Stop: 
+          - Label: "Stop Attack!"
+            Style: "DANGER"
+            Emoji: "1000566539885490257"
+            CustomID: "crash-stopattack"
+
+  TimeForRole: 
+    # -1 for unlimited
+    Admin: 
+      Min: -1
+      Max: -1
+    Premium: 
+      Min: 60
+      Max: 180
+    Basic: 
+      Min: 60
+      Max: 120
+  
+        

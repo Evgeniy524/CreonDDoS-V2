@@ -1,0 +1,45 @@
+HexBot:
+  Admin:
+    Stop: 
+      Name: "stop"
+      Description: "Stop the attacks in progress!"
+      Cooldowns: 60
+      Role: Admin # Admin, Premium, Basic
+      Options:
+        Enabled: true
+        OwnerOnly: false
+    Update: 
+      Name: "update"
+      Description: "Updated list of proxies for attack!"
+      Cooldowns: 60
+      Role: [] # Admin, Premium, Basic
+      Options:
+        Enabled: true
+        OwnerOnly: false
+
+  Basic: 
+    Crash: 
+      Name: "crash"
+      Description: "Send powerful attacks to the server!"
+      Cooldowns: 30
+      Role: Basic # Admin, Premium, Basic
+      Options:
+        Enabled: true
+        OwnerOnly: false
+    Protocols: 
+      Name: "protocols"
+      Description: "Show a list of minecraft version code!"
+      Cooldowns: 30
+      Role: Basic # Admin, Premium, Basic
+      Options:
+        Enabled: true
+        OwnerOnly: false
+    Methods: 
+      Name: "methods"
+      Description: "Show a list of methods for crashing!"
+      Cooldowns: 30
+      Role: Basic # Admin, Premium, Basic
+      Options:
+        Enabled: true
+        OwnerOnly: false
+   
