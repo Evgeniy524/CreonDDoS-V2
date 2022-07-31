@@ -2,7 +2,7 @@ HexBot:
   General: 
     Client: "HexBot"
     # Don't touch it
-    Version: "1.1"
+    Version: "1.2"
     # Enter your bot token here
     Token: ""
   

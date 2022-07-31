@@ -1,6 +1,6 @@
 {
     "name": "HexBot",
-    "version": "1.1",
+    "version": "1.2",
     "description": "Bot Send Attack Via Discord",
     "main": "index.js",
     "scripts": {
