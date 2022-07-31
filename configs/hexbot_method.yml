@@ -4,7 +4,7 @@ HexBot:
     SpecifiedJava: true
     Path: 
       # Path when SpecifiedJava: true
-      Enabled: '"$HOME/java8/bin/java"'
+      Enabled: '"$HOME/java8/bin/{path}"'
       # Path when SpecifiedJava: false
       Disabled: "java"
 

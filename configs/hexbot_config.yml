@@ -2,7 +2,7 @@ HexBot:
   General: 
     Client: "HexBot"
     # Don't touch it
-    Version: "1.0"
+    Version: "1.1"
     # Enter your bot token here
     Token: ""
   
@@ -28,21 +28,22 @@ HexBot:
     # Enter your guild id here!
     ID: ""
     # List of owner ids!
-    Owner: 
-      - ""
+    Owner: []
+    #  - "459968756416905216"
       
     Channels:
       # These channels allow you to use commands in it!
-      WhiteListRoom: 
-        - ""
-        - ""
+      WhiteListRoom: []
+      #  - "991713970438279180"
+      #  - "948425289598378037"
       # Channels that allow the use of the command (/crash)
-      CrashRoom: 
-        - ""
+      CrashRoom: []
+      #  - "948425289598378037"
       # These channels notify the proxy auto update!
       # Need AutoUpdate: true to work!
-      UpdateRoom: 
-        - ""
+      UpdateRoom: []
+      #  - "991713970438279180"
+      #  - "948425289598378037"
     
     # Explain the role of commands and methods!
     # Role priority: Admin -> Premium -> Basic
@@ -52,14 +53,14 @@ HexBot:
     # When Role: Admin -> All 1 role types can be used (Admin)
     Roles:
       # List admin role ids
-      Admin: 
-        - ""
+      Admin: []
+      #  - "948518823672311818"
       # List premium role ids
-      Premium: 
-        - ""
+      Premium: []
+      #  - "1000647557074141194"
       # List basic role ids
-      Basic: 
-        - ""
+      Basic: []
+      #  - "1000647643166425188"
   
   Update: 
     # Should update on startup be enabled!
@@ -68,7 +69,7 @@ HexBot:
     # Should the auto-update feature be enabled?
     AutoUpdate: true
     # Time automatically updated each time. In seconds!
-    Time: 900 
+    Time: 15
     # Mode of update:
     # USER -> User needs to enter URL to update!
     # URL -> Use the URL available in the config!
