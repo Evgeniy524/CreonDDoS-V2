@@ -1,10 +1,10 @@
 HexBot:
   RunOption: 
     # This option will be suitable when running bot on host/node
-    SpecifiedJava: true
+    SpecifiedJava: false
     Path: 
       # Path when SpecifiedJava: true
-      Enabled: '"$HOME/java8/bin/{path}"'
+      Enabled: '"$HOME/java8/bin/java"'
       # Path when SpecifiedJava: false
       Disabled: "java"
 
@@ -15,6 +15,8 @@ HexBot:
     
   # You can add versions yourself as Minecraft updates!
   VersionCode: 
+    - Version: "1.19.1"
+      Value: 760
     - Version: "1.19.x"
       Value: 759
     - Version: "1.18.2"

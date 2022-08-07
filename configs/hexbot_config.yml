@@ -2,7 +2,7 @@ HexBot:
   General: 
     Client: "HexBot"
     # Don't touch it
-    Version: "1.2"
+    Version: "2.0"
     # Enter your bot token here
     Token: ""
   
@@ -22,7 +22,7 @@ HexBot:
     StreamingURL: "https://www.twitch.tv/hexbot" 
     RandomStatus: true
     # In seconds
-    Interval: 10
+    Time: 10
 
   Guild:
     # Enter your guild id here!
@@ -38,12 +38,12 @@ HexBot:
       #  - "948425289598378037"
       # Channels that allow the use of the command (/crash)
       CrashRoom: []
-      #  - "948425289598378037"
+      #  - "991713970438279180"
       # These channels notify the proxy auto update!
       # Need AutoUpdate: true to work!
       UpdateRoom: []
       #  - "991713970438279180"
-      #  - "948425289598378037"
+      #  - "1001429639887077436"
     
     # Explain the role of commands and methods!
     # Role priority: Admin -> Premium -> Basic
@@ -59,7 +59,7 @@ HexBot:
       Premium: []
       #  - "1000647557074141194"
       # List basic role ids
-      Basic: []
+      Basic: [] 
       #  - "1000647643166425188"
   
   Update: 
@@ -67,9 +67,9 @@ HexBot:
     # If enabled, it will update itself every time you start up
     UpdateOnStartUp: false
     # Should the auto-update feature be enabled?
-    AutoUpdate: true
+    AutoUpdate: false
     # Time automatically updated each time. In seconds!
-    Time: 15
+    Time: 900
     # Mode of update:
     # USER -> User needs to enter URL to update!
     # URL -> Use the URL available in the config!
@@ -79,7 +79,25 @@ HexBot:
     # Proxy file name
     FileName: "proxies.txt"
     # Proxy update url
-    URL: "https://api.openproxylist.xyz/socks4.txt"
+    URL: 
+      - "https://api.openproxylist.xyz/socks4.txt"
+      - "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt"
+      - "https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks4.txt"
+      - "https://raw.githubusercontent.com/rdavydov/proxy-list/main/proxies/socks4.txt"
+      - "https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS4_RAW.txt"
+      - "https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks4.txt"
+      - "https://raw.githubusercontent.com/UptimerBot/proxy-list/main/proxies/socks4.txt"
+      - "https://proxyspace.pro/socks4.txt"
+      - "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks4.txt"
+      - "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies_anonymous/socks4.txt"
+      - "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks4.txt"
+      - "https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks4.txt"
+      - "http://worm.rip/socks4.txt"
+      - "https://www.proxy-list.download/api/v1/get?type=socks4"
+      - "https://raw.githubusercontent.com/HyperBeats/proxy-list/main/socks4.txt"
+      - "https://raw.githubusercontent.com/mmpx12/proxy-list/master/socks4.txt"
+      - "https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks4.txt"
+      - "https://raw.githubusercontent.com/B4RC0DE-TM/proxy-list/main/SOCKS4.txt"
   
   # This feature will automatically download java for bot, very useful when using on host/node
   AutoDownloadJava: 
@@ -89,6 +107,11 @@ HexBot:
     URL: "https://builds.openlogic.com/downloadJDK/openlogic-openjdk/8u262-b10/openlogic-openjdk-8u262-b10-linux-x64.tar.gz"
     
   Buttons: 
+    # Specify IDs for buttons!
+    Config: 
+      StopAttackEmbed: "crash-stopattack"
+      StopConfirm: "stopconfirm-accept"
+      StopCancel: "stopconfirm-cancel"
     # Don't change the CustomID!
     Commands: 
       Stop: 
@@ -107,6 +130,35 @@ HexBot:
             Style: "DANGER"
             Emoji: "1000566539885490257"
             CustomID: "crash-stopattack"
+  DropdownMenu: 
+    Config: 
+      SelectMethodsType: 
+        All: "methodstype-all"
+        Admin: "methodstype-admin"
+        Premium: "methodstype-premium"
+        Basic: "methodstype-basic"
+    Commands: 
+      Methods: 
+        SelectType: 
+          CustomID: "methodstype-select"
+          Placeholder: "Click to select type of methods!"
+          Options: 
+            - Label: "Type - All"
+              Description: "List all available methods!"
+              Value: "methodstype-all"
+              Emoji: "1000345453927350283"
+            - Label: "Type - Admin"
+              Description: "Listed all methods with type admin!"
+              Value: "methodstype-admin"
+              Emoji: "1000345453927350283"
+            - Label: "Type - Premium"
+              Description: "Listed all methods with type premium!"
+              Value: "methodstype-premium"
+              Emoji: "1000345453927350283"
+            - Label: "Type - Basic"
+              Description: "Listed all methods with type basic!"
+              Value: "methodstype-basic"
+              Emoji: "1000345453927350283"
 
   TimeForRole: 
     # -1 for unlimited

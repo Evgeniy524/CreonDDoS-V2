@@ -14,7 +14,12 @@ HexBot:
     InvalidChannel: 
       Title: "❌ INVALID CHANNEL"
       Colour: "{error_colour}"
-      Description: "**[1] Content:**\n> You cannot do this at this **channel**. Please\n> execute commands on __authorized channels__!\n**[2] Allowed Channels:**\n> {allowed_channels}"
+      Description: 
+        - "**[1] Content:**"
+        - "> You cannot do this at this **channel**. Please"
+        - "> execute commands on __authorized channels__!"
+        - "**[2] Allowed Channels:**"
+        - "> {allowed_channels}"
       Thumbnail: ""
       Image: ""
       TimeStamp: true
@@ -29,7 +34,10 @@ HexBot:
     ErrorCommand:
       Title: "🔴 THE COMMAND IS ERROR"
       Colour: "{error_colour}"
-      Description: "**[1] Content:**\n> There was an __error__ with the command you\n> just **used**! Check the console for *details*!"
+      Description: 
+        - "**[1] Content:**"
+        - "> There was an __error__ with the command you"
+        - "> just **used**! Check the console for *details*!"
       Thumbnail: ""
       Image: ""
       TimeStamp: true
@@ -44,7 +52,10 @@ HexBot:
     CommandDisabled: 
       Title: "🔴 COMMAND HAS BEEN DISABLED"
       Colour: "{error_colour}"
-      Description: "**[1] Content:**\n> The __command__ you just used has been **disabled**\n> by the administrator. Enable in *configuration!*"
+      Description: 
+        - "**[1] Content:**"
+        - "> The __command__ you just used has been **disabled**"
+        - "> by the administrator. Enable in *configuration!*"
       Thumbnail: ""
       Image: ""
       TimeStamp: true
@@ -59,7 +70,13 @@ HexBot:
     OnwerOnly: 
       Title: "🙅 ONLY OWNER USE ONLY"
       Colour: "{error_colour}"
-      Description: "**[1] Content:**\n> This command can only be __executed __\n> by the owner of **HexBot**.Check out\n> the list of *owners* right below!\n**[2] List:**\n> {owner_list}"
+      Description: 
+        - "**[1] Content:**"
+        - "> This command can only be __executed __"
+        - "> by the owner of **HexBot**.Check out"
+        - "> the list of *owners* right below!"
+        - "**[2] List:**"
+        - "> {owner_list}"
       Thumbnail: ""
       Image: ""
       TimeStamp: true
@@ -74,7 +91,14 @@ HexBot:
     CoolDowns: 
       Title: "🔗 PLEASE LIMIT SPAM"
       Colour: "{error_colour}"
-      Description: "**[1] Content:**\n> We've seen you're using __statements__ too\n> often. Please **refrain** from spamming or\n> you will be punished! Thanks your!\n**[2] Notice:**\n> You can use the *command* again later!\n> ```{cooldowns_ms}```"
+      Description: 
+        - "**[1] Content:**"
+        - "> We've seen you're using __statements__ too"
+        - "> often. Please **refrain** from spamming or"
+        - "> you will be punished! Thanks your!"
+        - "**[2] Notice:**"
+        - "> You can use the *command* again later!"
+        - "> ```{cooldowns_ms}```"
       Thumbnail: ""
       Image: ""
       TimeStamp: true
@@ -90,7 +114,13 @@ HexBot:
     CommandRequire: 
       Title: "❌ {title-role_required} ROLE REQUIREMENTS"
       Colour: "{error_colour}"
-      Description: "**[1] Content:**\n> You need to have one of the roles of __{role_required}__\n> *to be able to use this command.* You can see\n> the list of roles that can use this **command**!\n**[2] Role List:**\n> {role_list}"
+      Description: 
+        - "**[1] Content:**"
+        - "> You need to have one of the roles of __{role_required}__"
+        - "> *to be able to use this command.* You can see"
+        - "> the list of roles that can use this **command**!"
+        - "**[2] Role List:**"
+        - "> {role_list}"
       Thumbnail: ""
       Image: ""
       TimeStamp: true
@@ -105,7 +135,13 @@ HexBot:
     MethodsRequire: 
       Title: "❌ {title-role_required} ROLE REQUIREMENTS"
       Colour: "{error_colour}"
-      Description: "**[1] Content:**\n> You need to have one of the roles of __{role_required}__\n> *to be able to use this method.* You can see\n> the list of roles that can use this **method**!\n**[2] Role List:**\n> {role_list}"
+      Description: 
+        - "**[1] Content:**"
+        - "> You need to have one of the roles of __{role_required}__"
+        - "> *to be able to use this method.* You can see" 
+        - "> the list of roles that can use this **method**!" 
+        - "**[2] Role List:**"
+        - "> {role_list}"
       Thumbnail: ""
       Image: ""
       TimeStamp: true
@@ -119,11 +155,320 @@ HexBot:
       Fields: []
   
   Commands: 
+    Whois: 
+      BlackListDomain: 
+        Title: "❌ THIS DOMAIN IS CURRENTLY BANNED"
+        Colour: "{error_colour}"
+        Description: 
+          - "**[1] Content:**"
+          - "> This domain is __currently__ on HexBot's restricted"
+          - "> **blacklist**. Please use a *different* domain name!"
+          - "**[2] Information:**"
+          - "> __Domain Name:__"
+          - "> ```{domain}```"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: []
+      Starting: 
+        Title: "<a:botloop:1000733944062431313> STARTING QUERY DOMAIN"
+        Colour: "{default_colour}"
+        Description: 
+          - "**[1] Content:**"
+          - "> We have __sent__ the information to be **queried**"
+          - "> and are waiting for the *results to be sent back*!"
+          - "> "
+          - ">  This process may *take a while*! Please wait :("
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields:
+          - Title: "🌍 __**Domain**__"
+            Description: "```{domain}```"
+            Inline: true
+      InvalidQuery: 
+        Title: "<:offline:1003852146531377295> INVALID QUERY FOR DOMAIN"
+        Colour: "{default_colour}"
+        Description: 
+          - "**[1] Content:**"
+          - "> We have **received** the results of the __queried__."
+          - "> You can see the *related information* below!"
+          - "**[2] Information:**"
+          - "> __**Request By:**__ {user_tag}"
+          - "> (`{user_id}`)"
+          - "> __**Domain:**__ `{domain}`"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields:
+          - Title: "🔗 __**Status**__"
+            Description: "```{status}```"
+            Inline: true
+      QuerySuccess: 
+        Title: "<a:done:1000738306251821146> QUERY DOMAIN SUCCESS"
+        Colour: "{success_colour}"
+        Description: 
+          - "**[1] Content:**"
+          - "> We have **received** the results of the __queried__."
+          - "> You can see the *related information* below!"
+          - "**[2] Information:**"
+          - "> __**Request By:**__ {user_tag}"
+          - "> (`{user_id}`)"
+          - "> __**Domain:**__ `{domain}`"
+          - "> __**Country:**__ `{country} [{country_code}]`"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields:
+          - Title: "📡 __**Ip Address**__"
+            Description: "```{ip_address}```"
+            Inline: true
+          - Title: "🚦 __**AS**__"
+            Description: "```{as}```"
+            Inline: true
+          - Title: "📨 __**ISP**__"
+            Description: "```{isp}```"
+            Inline: true
+          - Title: "🚞 __**City**__"
+            Description: "```{city} [{region_code}]```"
+            Inline: true
+    Methods: 
+      SeclectType: 
+        Title: "<a:pepefrog:1001091545354743818> SELECT METHODS TYPE"
+        Colour: "{default_colour}"
+        Description: 
+          - "**[1] Content:**"
+          - "> You need to select the __role type__ for the **method** that you need"
+          - "> to see. And it __requires__ the role of that type *to be able to watch*!"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: []
+      AllMethods: 
+        Title: "<a:TNT:1003961213652307978> LIST OF ALL METHODS"
+        Colour: "{default_colour}"
+        Description: 
+          - "**[1] Content:**"
+          - "> Below is a __list__ of all the **methods**. Check it out :)"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: 
+          - Title: "💎 __**Admin Methods:**__ `{admin_methods_amount}`"
+            Description: "{admin_methods}"
+            Inline: true
+          - Title: "⚡ __**Premium Methods:**__ `{premium_methods_amount}`"
+            Description: "{premium_methods}"
+            Inline: true
+          - Title: "⭐ __**Basic Methods:**__ `{basic_methods_amount}`"
+            Description: "{basic_methods}"
+            Inline: true
+      RoleMethods: 
+        Title: "<a:TNT:1003961213652307978> LIST OF {title-role} METHODS"
+        Colour: "{default_colour}"
+        Description: 
+          - "**[1] Content:**"
+          - "> Below is a list of __methods__ that **{role}**"
+          - "> roles can be used. Check it out!"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: 
+          - Title: "💥 __**{role} Methods:**__ `{methods_amount}`"
+            Description: "> {methods}"
+            Inline: true
+    Protocols: 
+      Value: 
+        Title: "<a:pepefrog:1001091545354743818> CHECK OUT PROTOCOLS"
+        Colour: "{default_colour}"
+        Description: 
+          - "**[1] Content:**"
+          - "> We have __listed__ all the **protocols code**"
+          - "> included in the *configuration file*!"
+          - "> Check it out **below**, right now <33"
+          - "**[2] Information:**"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: 
+          - Title: "🔸 __**Version & Protocols**__"
+            Description: "{value}"
+            Inline: true
+    Resolver: 
+      BlackListHost: 
+        Title: "❌ THIS HOST IS CURRENTLY BANNED"
+        Colour: "{error_colour}"
+        Description: 
+          - "**[1] Content:**"
+          - "> This address is __currently__ on HexBot's restricted"
+          - "> **blacklist**. Please use a *different* ip address!"
+          - "**[2] Information:**"
+          - "> __IP Address:__"
+          - "> ```{ip_address}```"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields: []
+      Checking: 
+        Title: "<a:botloop:1000733944062431313> STARTING RESOLVER HOST"
+        Colour: "{default_colour}"
+        Description: 
+          - "**[1] Content:**"
+          - "> We have __sent__ the information to be **analyzed**"
+          - ">  and are waiting for the *results to be sent back*!"
+          - "> "
+          - ">  This process may *take a while*! Please wait :("
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields:
+          - Title: "📡 __**Host**__"
+            Description: "```{host}```"
+            Inline: true
+      Offline: 
+        Title: "<:offline:1003852146531377295> HOST IS OFFLINE"
+        Colour: "{error_colour}"
+        Description: 
+          - "**[1] Content:**"
+          - "> We have **received** the results of the __analysis__."
+          - "> You can see the *related information* below!"
+          - "**[2] Information:**"
+          - "> __**Request By:**__ {user_tag}"
+          - "> (`{user_id}`)"
+          - "> __**Host:**__ `{host}`"
+          - "> __**Type:**__ `{type}`"
+        Thumbnail: ""
+        Image: ""
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields:
+          - Title: "📡 __**Ip Address & Port**__"
+            Description: "```{ip_address} | {port}```"
+            Inline: true
+          - Title: "🔗 __**Status**__"
+            Description: "```{status}```"
+            Inline: true
+      Online: 
+        # {host}, {type}, {ip_address}, {port}, {status}, {motd}, {players_online}, {players_max}, {version}, {protocols}
+        Title: "<a:done:1000738306251821146> HOST IS ONLINE"
+        Colour: "{success_colour}"
+        Description: 
+          - "**[1] Content:**"
+          - "> We have **received** the results of the __analysis__."
+          - "> You can see the *related information* below!"
+          - "**[2] Information:**"
+          - "> __**Request By:**__ {user_tag}"
+          - "> (`{user_id}`)"
+          - "> __**Host:**__ `{host}:{port}`"
+          - "> __**Type:**__ `{type}`"
+        Thumbnail: "" # {icon}
+        Image: "{banner}"
+        TimeStamp: true
+        Author:
+          Name: ""
+          Icon: ""
+          URl: "https://discord.js.org"
+        Footer:
+          Text: "{footer_text}"
+          Icon: "{footer_icon}"
+        Fields:
+          - Title: "📡 __**Ip Address**__"
+            Description: "```{ip_address}```"
+            Inline: true
+          - Title: "🔗 __**Status**__"
+            Description: "```{status}```"
+            Inline: true
+          - Title: "👤 __**Players**__"
+            Description: "```{players_online}/{players_max}```"
+            Inline: true
+          - Title: "📋 __**Motd**__"
+            Description: "```{motd}```"
+            Inline: true
     Stop: 
       Confirm: 
         Title: "🌟 PLEASE CONFIRM THE STOP"
         Colour: "{default_colour}"
-        Description: "**[1] Content:**\n> To proceed with __stopping__ the attacks.\n> Please **select** the options below!\n**[2] Options:**"
+        Description: 
+          - "**[1] Content:**"
+          - "> To proceed with __stopping__ the attacks."
+          - "> Please **select** the options below!"
+          - "**[2] Options:**"
         Thumbnail: ""
         Image: ""
         TimeStamp: true
@@ -144,7 +489,13 @@ HexBot:
       Success: 
         Title: "✅ STOPPED SUCCESS"
         Colour: "{success_colour}"
-        Description: "**[1] Content:**\n> One person **executed** the stop command\n> All attacks have been __stopped__ successfully!\n**[2] Information:**\n> __User:__ {user_tag}\n> (`{user_id}`)"
+        Description: 
+          - "**[1] Content:**"
+          - "> One person **executed** the stop command"
+          - "> All attacks have been __stopped__ successfully!"
+          - "**[2] Information:**"
+          - "> __User:__ {user_tag}"
+          - "> (`{user_id}`)"
         Thumbnail: ""
         Image: ""
         TimeStamp: true
@@ -160,7 +511,16 @@ HexBot:
       AutoUpdate: 
         Title: "<a:done:1000738306251821146> AUTOMATIC UPDATED PROXY"
         Colour: "{success_colour}"
-        Description: "**[1] Content:**\n> Proxy has been updated **successfully**. You can\n> check out the __information__ about this update!\n> \n> Updated once every `{update_time}` minutes!\n**[2] Information:**\n> __**Updated By:**__ {client_tag}\n> (`{client_id}`)\n> __**File Name:**__ `{file_name}`"
+        Description: 
+          - "**[1] Content:**"
+          - "> Proxy has been updated **successfully**. You can"
+          - "> check out the __information__ about this update!"
+          - "> "
+          - "> Updated once every `{update_time}` minutes!"
+          - "**[2] Information:**"
+          - "> __**Updated By:**__ {client_tag}"
+          - "> (`{client_id}`)"
+          - "> __**File Name:**__ `{file_name}`"
         Thumbnail: ""
         Image: ""
         TimeStamp: true
@@ -178,7 +538,13 @@ HexBot:
       MissingURL: 
         Title: "<a:alert:1000337855555588188> PLEASE ENTER THE URL"
         Colour: "{error_colour}"
-        Description: "**[1] Content:**\n> You haven't fully __filled__ in the **options**!\n> Please enter the URL for the *proxy update*!\n**[2] Notice:**\n> You need to enter the __URL__ with a correct\n> **format** and get the *right results*! Thanks"
+        Description: 
+          - "**[1] Content:**"
+          - "> You haven't fully __filled__ in the **options**!"
+          - "> Please enter the URL for the *proxy update*!"
+          - "**[2] Notice:**"
+          - "> You need to enter the __URL__ with a correct"
+          - "> **format** and get the *right results*! Thanks"
         Thumbnail: ""
         Image: ""
         TimeStamp: true
@@ -193,7 +559,14 @@ HexBot:
       MissingURLInConfig: 
         Title: "<a:alert:1000337855555588188> ENTER URL IN CONFIG"
         Colour: "{error_colour}"
-        Description: "**[1] Content:**\n> You haven't fully __filled__ in the **config**!\n> Please enter the URL for the *proxy*\n> *update* in to the configuration file!\n**[2] Notice:**\n> You need to enter the __URL__ with a correct\n> **format** and get the *right results*! Thanks"
+        Description: 
+          - "**[1] Content:**"
+          - "> You haven't fully __filled__ in the **config**!"
+          - "> Please enter the URL for the *proxy*"
+          - "> *update* in to the configuration file!"
+          - "**[2] Notice:**"
+          - "> You need to enter the __URL__ with a correct"
+          - "> **format** and get the *right results*! Thanks"
         Thumbnail: ""
         Image: ""
         TimeStamp: true
@@ -208,7 +581,11 @@ HexBot:
       InvalidURL: 
         Title: "<a:alert:1000337855555588188> INVALID PROXY URL"
         Colour: "{error_colour}"
-        Description: "**[1] Content:**\n> The __URL__ you just **entered** has an\n> *invalid format*. Please check again!\n**[2] Information:**"
+        Description: 
+          - "**[1] Content:**"
+          - "> The __URL__ you just **entered** has an"
+          - "> *invalid format*. Please check again!"
+          - "**[2] Information:**"
         Thumbnail: ""
         Image: ""
         TimeStamp: true
@@ -226,7 +603,10 @@ HexBot:
       Loading: 
         Title: "<a:botloop:1000733944062431313> GETTING PROXY INFORMATION"
         Colour: "{default_colour}"
-        Description: "**[1] Content:**\n> We are __conducting__ testing as well as obtaining\n> data of **Proxy**. This process may *take a while*! "
+        Description: 
+          - "**[1] Content:**"
+          - "> We are __conducting__ testing as well as obtaining"
+          - "> data of **Proxy**. This process may *take a while*!"
         Thumbnail: ""
         Image: ""
         TimeStamp: true
@@ -241,7 +621,14 @@ HexBot:
       Success: 
         Title: "<a:done:1000738306251821146> UPDATED PROXY SUCCESS"
         Colour: "{success_colour}"
-        Description: "**[1] Content:**\n> Proxy has been updated **successfully**. You can\n> check out the __information__ about this update!\n**[2] Information:**\n> __**Updated By:**__ {user_tag}\n> (`{user_id}`)\n> __**File Name:**__ `{file_name}`"
+        Description: 
+          - "**[1] Content:**"
+          - "> Proxy has been updated **successfully**. You can"
+          - "> check out the __information__ about this update!"
+          - "**[2] Information:**"
+          - "> __**Updated By:**__ {user_tag}"
+          - "> (`{user_id}`)"
+          - "> __**File Name:**__ `{file_name}`"
         Thumbnail: ""
         Image: ""
         TimeStamp: true
@@ -260,7 +647,12 @@ HexBot:
       InvalidChannel: 
         Title: "❌ INVALID CRASH ROOM"
         Colour: "{error_colour}"
-        Description: "**[1] Content:**\n> You cannot use __attack__ commands on this\n> channel.  Use in the **allowed** channels below!\n**[2] Allowed Channels:**\n> {allowed_channels}"
+        Description: 
+          - "**[1] Content:**"
+          - "> You cannot use __attack__ commands on this"
+          - "> channel.  Use in the **allowed** channels below!"
+          - "**[2] Allowed Channels:**"
+          - "> {allowed_channels}"
         Thumbnail: ""
         Image: ""
         TimeStamp: true
@@ -275,7 +667,13 @@ HexBot:
       BlackListHost: 
         Title: "❌ THIS HOST IS CURRENTLY BANNED"
         Colour: "{error_colour}"
-        Description: "**[1] Content:**\n> This address is __currently__ on HexBot's restricted\n> **blacklist**. Please use a *different* ip address!\n**[2] Information:**\n> __IP Address:__\n> ```{ip_address}```"
+        Description: 
+          - "**[1] Content:**"
+          - "> This address is __currently__ on HexBot's restricted"
+          - "> **blacklist**. Please use a *different* ip address!"
+          - "**[2] Information:**"
+          - "> __IP Address:__"
+          - "> ```{ip_address}```"
         Thumbnail: ""
         Image: ""
         TimeStamp: true
@@ -290,7 +688,11 @@ HexBot:
       InvalidVersion: 
         Title: "❌ INVALID VERSION CODE"
         Colour: "{error_colour}"
-        Description: "**[1] Content:**\n> The version code you __entered__ is invalid or does not\n> exist. You can **see** a list of version codes *by using*!\n> ```/{protocols_cmd}```"
+        Description: 
+          - "**[1] Content:**"
+          - "> The version code you __entered__ is invalid or does not"
+          - "> exist. You can **see** a list of version codes *by using*!"
+          - "> ```/{protocols_cmd}```"
         Thumbnail: ""
         Image: ""
         TimeStamp: true
@@ -305,7 +707,11 @@ HexBot:
       InvalidMethods: 
         Title: "❌ INVALID CRASH METHODS"
         Colour: "{error_colour}"
-        Description: "**[1] Content:**\n> The id of methds you __entered__ is invalid or does not\n> exist. You can **see** a list of methods id *by using*!\n> ```/{methods_cmd}```"
+        Description: 
+          - "**[1] Content:**"
+          - "> The id of methds you __entered__ is invalid or does not"
+          - "> exist. You can **see** a list of methods id *by using*!"
+          - "> ```/{methods_cmd}```"
         Thumbnail: ""
         Image: ""
         TimeStamp: true
@@ -320,7 +726,14 @@ HexBot:
       MethodsDisabled: 
         Title: "❌ METHODS HAS BEEN DISABLED"
         Colour: "{error_colour}"
-        Description: "**[1] Content:**\n> The __method__ you just entered has been\n> **disabled** in the config. If you are admin\n> then  *enable it or else use another method*!\n**[2] Informaiton:**\n> __**Method:**__ `{method_name}`\n> ```{method_id}```"
+        Description: 
+          - "**[1] Content:**"
+          - "> The __method__ you just entered has been"
+          - "> **disabled** in the config. If you are admin"
+          - "> then  *enable it or else use another method*!"
+          - "**[2] Informaiton:**"
+          - "> __**Method:**__ `{method_name}`"
+          - "> ```{method_id}```"
         Thumbnail: ""
         Image: ""
         TimeStamp: true
@@ -335,7 +748,13 @@ HexBot:
       TimeForRole: 
         Title: "⏳ INVALID TIME FOR CRASH"
         Colour: "{error_colour}"
-        Description: "**[1] Content:**\n> The number of __times__ in seconds that you\n> entered *isn't valid*. It's too little for your **role**!\n**[2] Notice:**\n> You can look through your minimum\n> as well as your maximum time limits!"
+        Description: 
+          - "**[1] Content:**"
+          - "> The number of __times__ in seconds that you"
+          - "> entered *isn't valid*. It's too little for your **role**!"
+          - "**[2] Notice:**"
+          - "> You can look through your minimum"
+          - "> as well as your maximum time limits!"
         Thumbnail: ""
         Image: ""
         TimeStamp: true
@@ -356,7 +775,10 @@ HexBot:
       SendAttack: 
         Title: "<a:partyrobot:1002759780751900732> ATTACK HAS BEEN STARTED"
         Colour: "{default_colour}"
-        Description: "**[1] Information:**\n> __**Attack By:**__ {user_tag}\n> (`{user_id}`)"
+        Description: 
+          - "**[1] Information:**"
+          - "> __**Attack By:**__ {user_tag}"
+          - "> (`{user_id}`)"
         Thumbnail: "{target_icon}"
         Image: "{target_resolver}"
         TimeStamp: true
@@ -383,7 +805,12 @@ HexBot:
       AttackStop: 
         Title: "🚨 ATTACK HAS BEEN STOPPED"
         Colour: "{success_colour}"
-        Description: "**[1] Content:**\n> This __attack__ has now been **stopped**!\n**[2] Information:**\n> __**Attack By:**__ {user_tag}\n> (`{user_id}`)"
+        Description: 
+          - "**[1] Content:**"
+          - "> This __attack__ has now been **stopped**!"
+          - "**[2] Information:**"
+          - "> __**Attack By:**__ {user_tag}"
+          - "> (`{user_id}`)"
         Thumbnail: "{user_icon}"
         Image: ""
         TimeStamp: true
