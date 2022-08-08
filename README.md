@@ -18,3 +18,24 @@
 ### Requirements
 > Nodejs v16<br/>
 > Discord.js v13
+
+---  
+## Documentation
+  
+📚 You can visit the wiki here [HexBot Wiki](https://github.com/ccs-lt/HexBot/wiki)
+
+**🔨 Clone And Install Package**
+```
+git clone https://github.com/ccs-lt/HexBot.git
+cd HexBot
+npm install / node .
+```
+---
+
+## Donations
+* <p><a href="https://www.buymeacoffee.com/ccslt">  <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="ccslt" /></a>
+  <a href="https://ko-fi.com/ccs_lt"> <img align="center" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="ccs_lt" /></a>
+  <a href="https://www.paypal.me/lamtin0106"> <img align="center" alt="paypal" src="https://i.imgur.com/8hCz2Y2.png"></a>
+  </p>
+  <br>
+<br>
