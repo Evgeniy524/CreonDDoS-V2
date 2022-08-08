@@ -1,6 +1,6 @@
 <p align="center"><img src="https://i.imgur.com/bAfTdtk.png" alt="hexbot"></p>
 
-<h1 align="center">HexBot - Minecraft Free Stress Via Discord</h1>
+<h1 align="center">HexBot - Minecraft Stress Testing Via Discord</h1>
 <em><h5 align="center">Main Programming Language - Nodejs 16</h5></em>
 
 <p align="center">
