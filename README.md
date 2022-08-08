@@ -8,6 +8,8 @@
 <a href="#"><img alt="HexBot commit" src="https://img.shields.io/github/last-commit/ccs-lt/HexBot/main?style=for-the-badge&logo=github&color=red"></a>
 <a href="#"><img alt="HexBot stars" src="https://img.shields.io/github/stars/ccs-lt/HexBot?style=for-the-badge&color=blue&logo=stripe"></a>
 
+<p align="center">Please do not attack servers without the owner's permission. We are not responsible for that!</p>
+
 ## Author
 > CCS_LT#9103
 
