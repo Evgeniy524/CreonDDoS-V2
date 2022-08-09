@@ -13,10 +13,6 @@
 ## Author
 > CCS_LT#9103
 
-### Notice
-> This bot only works on operating systems like Linux or Ubuntu!<br/>
-> You need to enter all the options in the configuration file<br/>
-
 ### Requirements
 > Nodejs v16<br/>
 > Discord.js v13
@@ -32,6 +28,8 @@ git clone https://github.com/ccs-lt/HexBot.git
 cd HexBot
 npm install (or node .)
 ```
+<h4>⛔ Notice: This bot only works on operating systems like Linux or Ubuntu!</h4>
+
 ---
 
 ## Donations
