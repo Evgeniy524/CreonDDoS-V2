@@ -10,12 +10,7 @@
 
 <p align="center">Please do not attack servers without the owner's permission. We are not responsible for that!</p>
 
-## Author
-> CCS_LT#9103
-
-### Requirements
-> Nodejs v16<br/>
-> Discord.js v13
+<p align="center"><img src="https://i.imgur.com/ODzLJJS.png" alt="hexbot"></p>
 
 ---  
 ## Documentation
