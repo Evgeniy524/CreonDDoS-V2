@@ -10,7 +10,7 @@
 
 <p align="center">Please do not attack servers without the owner's permission. We are not responsible for that!</p>
 
-<p align="center"><img src="https://i.imgur.com/ODzLJJS.png" alt="hexbot"></p>
+<p align="center"><img src="https://i.imgur.com/un8Zk7B.png" alt="hexbot"></p>
 
 ---  
 ## Documentation
