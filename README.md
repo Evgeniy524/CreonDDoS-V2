@@ -12,6 +12,24 @@
 
 <p align="center"><img src="https://i.imgur.com/un8Zk7B.png" alt="hexbot"></p>
 
+## Features 
+
+* 📜 Others 
+ ```
+ Update soon
+ ```
+
+* 📌 Commands [HexBot using slash commands](https://discordjs.guide/interactions/slash-commands.html#registering-slash-commands/)
+   * 📂 Admin
+     * ```/stop``` *Stop the attacks in progress!*
+     * ```/update``` *Updated list of proxies for attack!*
+   * 📂 Basic
+     * ```/crash``` *Send powerful attacks to the server!*
+     * ```/methods``` *Show a list of methods for crashing!*
+     * ```/protocols``` *Show a list of minecraft version code!*
+     * ```/resolver``` *Check the server's information!*
+     * ```/whois``` *Make a query for a domain name!*
+     
 ---  
 ## Documentation
   
@@ -34,3 +52,5 @@ npm install (or node .)
   </p>
   <br>
 <br>
+
+##### ~~San pham cua su ranh roi~~
