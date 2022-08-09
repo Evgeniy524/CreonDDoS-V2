@@ -30,7 +30,7 @@
 ```
 git clone https://github.com/ccs-lt/HexBot.git
 cd HexBot
-npm install / node .
+npm install (or node .)
 ```
 ---
 
