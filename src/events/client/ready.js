@@ -51,7 +51,7 @@ module.exports = {
                     activities: [{
                         name: utils.parsing(randomActivity[1], {
                             "{uptime}": ms(client.uptime, { long: true }),
-                            "{methods}": Object.keys(utils.method["methods"]).length,
+                            "{methods}": Object.keys(utils.method["methods"] == null ? {} : utils.method["methods"]).length,
                             "{user_online}": client.guilds.cache.get(utils.setting.general["guild-id"]).members.cache.filter(m => m.presence?.status != "offline").size,
                         }),
                         type: activityType[randomActivity[0]],
