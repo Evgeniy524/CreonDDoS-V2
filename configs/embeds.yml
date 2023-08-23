@@ -7,7 +7,7 @@ settings:
     custom: "#2f3137" 
   
   footer:
-    text: "HexBot-V2"
+    text: "CreonDDoS"
     icon: "https://i.imgur.com/jOuUXqE.gif"
 
 embeds: 
@@ -15,7 +15,7 @@ embeds:
     title: ""
     color: "error"
     description: 
-      - "❌ ``Error while executing the command!``"
+      - "❌ ``Ошибка при выполнении команды!``"
     thumbnail: ""
     image: ""
     timeStamp: false
@@ -32,8 +32,8 @@ embeds:
     title: ""
     color: "error"
     description: 
-      - "❌ ``You cannot do this at this channel!``"
-      - "> Allowed Channels:"
+      - "❌ ``Вы не можете сделать это в этом канале!``"
+      - "> Разрешенные каналы:"
       - "> {allowed_channels}"
     thumbnail: ""
     image: ""
@@ -51,7 +51,7 @@ embeds:
     title: ""
     color: "error"
     description: 
-      - "❌ ``This command has been disabled!``"
+      - "❌ ``Эта команда была отключена!``"
     thumbnail: ""
     image: ""
     timeStamp: false
@@ -68,7 +68,7 @@ embeds:
     title: ""
     color: "error"
     description: 
-      - "❌ ``You don't have permission to use this command!``"
+      - "❌ ``У вас нет разрешения на использование этой команды!``"
     thumbnail: ""
     image: ""
     timeStamp: false
@@ -86,7 +86,7 @@ embeds:
     title: ""
     color: "error"
     description: 
-      - "❌ `This ip address is currently blacklisted!`"
+      - "❌ `В настоящее время этот IP-адрес занесен в черный список!`"
     thumbnail: ""
     image: ""
     timeStamp: false
