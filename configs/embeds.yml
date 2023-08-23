@@ -103,8 +103,8 @@ embeds:
     title: ""
     color: "error"
     description: 
-      - "> Version `{version}` is not valid, please *choose*"
-      - "> version from one of the **choices!**"
+      - "> Версия `{version}` не найдена, пожалуйста *выберите*"
+      - "> версию одну из **вариантов!**"
     thumbnail: ""
     image: ""
     timeStamp: false
@@ -121,8 +121,8 @@ embeds:
     title: ""
     color: "error"
     description: 
-      - "> Method with **ID** `{method}` is not valid, please"
-      - "> choose *method* from one of the **choices!**"
+      - "> Метод с **ID** `{method}` не найден, пожалуйста"
+      - "> выберите *метод* один из **вариантов!**"
     thumbnail: ""
     image: ""
     timeStamp: false
@@ -139,11 +139,11 @@ embeds:
     title: ""
     color: "error"
     description: 
-      - "> The __method__ you just entered has been"
-      - "> **disabled** in the config. If you are admin"
-      - "> then  *enable it or else use another method*!"
-      - "```🔗 Information```"
-      - "> Method: `{method_name}`"
+      - "> __Метод__, который вы только что ввели, был"
+      - "> **отключен** в конфигурации. Если вы являетесь администратором"
+      - "> затем *включите его или используйте другой метод*!"
+      - "```🔗 Информация```"
+      - "> Метод: `{method_name}`"
       - "> ```{method_id}```"
     thumbnail: ""
     image: ""
@@ -153,7 +153,7 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Requested by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: [] 
   
@@ -161,10 +161,10 @@ embeds:
     title: ""
     color: "error"
     description: 
-      - "> The __method__ you need to use requires"
-      - "> certain **roles.** And you do not meet it!"
-      - "```🔗 Information```"
-      - "> Method: `{method_name}`"
+      - "> __Метод__, который вам нужен, требует"
+      - "> определенные **роли.** Которой у Вас нет!"
+      - "```🔗 Информация```"
+      - "> Метод: `{method_name}`"
       - "> ```{method_id}```"
     thumbnail: ""
     image: ""
@@ -174,17 +174,17 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Requested by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: [] 
   
   send-attack: 
-    title: "🚀 Attack Has Been Started"
+    title: "🚀 Атака начата"
     color: "custom"
     description: 
-      - "```🔗 Information```"
-      - "> Host: **{host}:{port}**"
-      - "> Method: **{method_name}** (`{method_id}`)"
+      - "```🔗 Информация```"
+      - "> Хост: **{host}:{port}**"
+      - "> Метод: **{method_name}** (`{method_id}`)"
     thumbnail: ""
     image: ""
     timeStamp: false
@@ -193,23 +193,23 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Requested by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: 
-      - name: "🔌 __**Version**__"
+      - name: "🔌 __**Версия**__"
         value: "```{version} ({version_code})```"
         inline: true
-      - name: "👻 __**CPS & Time**__"
-        value: "```{cps} CPS | {time} Seconds```"
+      - name: "👻 __**КПС & Время**__"
+        value: "```{cps} КПС | {time} Секунд```"
         inline: true
     
   attack-stopped: 
-    title: "🚨 Attack Has Been Stopped"
+    title: "🚨 Атака была остановлена"
     color: "custom"
     description: 
-      - "> This __attack__ has now been **stopped**!"
-      - "```🔗 Information```"
-      - "> Attack By: <@{user_id}>"
+      - "> __Атака__ была **остановлена**!"
+      - "```🔗 Информация```"
+      - "> Атака от: <@{user_id}>"
       - "> (`{user_id}`)"
     thumbnail: "{user_icon}"
     image: ""
@@ -228,8 +228,8 @@ embeds:
     title: ""
     color: "custom"
     description: 
-      - "> To proceed with __stopping__ the attacks."
-      - "> Please **select** the green button!"
+      - "> Чтобы приступить к __остановке__ атак."
+      - "> Пожалуйста, **выберите** зеленую кнопку!"
     thumbnail: ""
     image: ""
     timeStamp: false
@@ -238,16 +238,16 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Requested by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: []
   
   stop-success:  
-    title: "✅ Stopped Success"
+    title: "✅ Успешно остановлены"
     color: "custom"
     description: 
-      - "> One person **executed** the stop command"
-      - "> All attacks have been __stopped__ successfully!"
+      - "> Один человек **выполнил** команду "stop""
+      - "> Все атаки были __успешно остановлены__!"
     image: ""
     timeStamp: false
     author:
@@ -255,19 +255,19 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Requested by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: []
   
   # Resolver 
   checking-data: 
-    title: "⌛ Starting Resolver Host"
+    title: "⌛ Запуск сканирования сервера"
     color: "custom"
     description: 
-      - "> We have __sent__ the information to be **analyzed**"
-      - ">  and are waiting for the *results to be sent back*!"
+      - "> Мы __отправили__ информацию для **анализа**"
+      - ">  и ждем, когда *результаты будут отправлены обратно*!"
       - "> "
-      - ">  This process may *take a while*! Please wait :("
+      - ">  Этот процесс может *занять некоторое время*! Пожалуйста подождите :("
     image: ""
     timeStamp: false
     author:
@@ -275,22 +275,22 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Requested by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: 
-      - name: "📡 __**Host**__"
+        name: "📡 __**Хост**__"
         value: "```{host}```"
         inline: true
   
   offline-host: 
-    title: "🚫 Host Is Offline"
+    title: "🚫 Сервер недоступен"
     color: "custom"
     description: 
-      - "> We have **received** the results of the __analysis__."
-      - "> You can see the *related information* below!"
-      - "```🔗 Information```"
-      - "> Host: `{host}`"
-      - "> Type: `{type}`"
+      - "> Мы **получили** результаты __анализа__."
+      - "> Вы можете ознакомиться с *соответствующей информацией* ниже!"
+      - "```🔗 Информация```"
+      - "> Хост: `{host}`"
+      - "> Тип: `{type}`"
     image: ""
     timeStamp: false
     author:
@@ -298,25 +298,25 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Requested by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: 
-      - name: "📡 __**Ip Address & Port**__"
+      - name: "📡 __**IP-адрес & Порт**__"
         value: "```{ip_address} | {port}```"
         inline: true
-      - name: "🔗 __**Status**__"
-        value: "```🔴 Offline```"
+      - name: "🔗 __**Статус**__"
+        value: "```🔴 Офлайн```"
         inline: true
   
   online-host: 
-    title: "✅ Host Is Online"
+    title: "✅ Сервер включен"
     color: "custom"
     description: 
-      - "> We have **received** the results of the __analysis__."
-      - "> You can see the *related information* below!"
-      - "```🔗 Information```"
-      - "> Host: `{host}:{port}`"
-      - "> Type: `{type}`"
+      - "> Мы **получили** результаты __анализа__."
+      - "> Вы можете ознакомиться с *соответствующей информацией* ниже!"
+      - "```🔗 Информация```"
+      - "> Хост: `{host}:{port}`"
+      - "> Тип: `{type}`"
     image: ""
     timeStamp: false
     author:
@@ -324,16 +324,16 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Requested by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: 
-      - name: "📡 __**Ip Address**__"
+      - name: "📡 __**IP-адрес**__"
         value: "```{ip_address}```"
         inline: true
-      - name: "🔗 __**Status**__"
-        value: "```🟢 Online```"
+      - name: "🔗 __**Статус**__"
+        value: "```🟢 Онлайн```"
         inline: true
-      - name: "👤 __**Players**__"
+      - name: "👤 __**Игроков**__"
         value: "```{players_online}/{players_max}```"
         inline: true
       - name: "📋 __**Motd**__"
@@ -342,13 +342,13 @@ embeds:
   
   # Whois
   starting-checking: 
-    title: "✅ Starting Query Domain"
+    title: "✅ Начальный домен запроса"
     color: "custom"
     description: 
-      - "> We have __sent__ the information to be **queried**"
-      - "> and are waiting for the *results to be sent back*!"
+      - "> Мы __отправили__ информацию, подлежащую **запросу**"
+      - "> и ждем, когда *результаты будут отправлены обратно*!"
       - "> "
-      - ">  This process may *take a while*! Please wait :("
+      - ">  Этот процесс может *занять некоторое время*! Пожалуйста подождите :("
     image: ""
     timeStamp: false
     author:
@@ -356,10 +356,10 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Requested by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: 
-      - name: "🌍 __**Domain**__"
+      - name: "🌍 __**Домен**__"
         value: "```{domain}```"
         inline: true 
     
@@ -367,8 +367,8 @@ embeds:
     title: ""
     color: "error"
     description: 
-      - "> The **domain** you entered is not __valid__ now!"
-      - "> Unable to proceed with data **retrieval.**"
+      - "> **Домен**, который вы ввели, сейчас недействителен!"
+      - "> Не удается продолжить **извлечение** данных."
     image: ""
     timeStamp: false
     author:
@@ -376,18 +376,18 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Requested by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: []
   
   invalid-query: 
-    title: "❌ Invalid Query For Domain"
+    title: "❌ Неверный запрос для Домена"
     color: "custom"
     description: 
-      - "> We have **received** the results of the __queried__."
-      - "> You can see the *related information* below!"
-      - "```🔗 Information```"
-      - "> Domain: `{domain}`"
+      - "> Мы **получили** результаты __запрошенного__."
+      - "> Вы можете ознакомиться с *соответствующей информацией* ниже!"
+      - "```🔗 Инфоормация```"
+      - "> Домен: `{domain}`"
     image: ""
     timeStamp: false
     author:
@@ -395,22 +395,22 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Requested by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: 
-      - name: "🔗 __**Status**__"
-        value: "```🔴 Failed```"
+      - name: "🔗 __**Статус**__"
+        value: "```🔴 Неудача```"
         inline: true 
   
   query-success:  
-    title: "✅ Query Domain Success"
+    title: "✅ Успешный запрос домена"
     color: "custom"
     description: 
-      - "> We have **received** the results of the __queried__."
-      - "> You can see the *related information* below!"
-      - "```🔗 Information```"
-      - "> Domain: `{domain}`"
-      - "> Country: `{country} [{country_code}]`"
+      - "> Мы **получили** результаты __запрошенного__."
+      - "> Вы можете ознакомиться с *соответствующей информацией* ниже!"
+      - "```🔗 Информация```"
+      - "> Домен: `{domain}`"
+      - "> Страна: `{country} [{country_code}]`"
     image: ""
     timeStamp: false
     author:
@@ -418,31 +418,31 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Requested by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: 
-      - name: "📡 __**Ip Address**__"
+      - name: "📡 __**IP-адрес**__"
         value: "```{ip_address}```"
         inline: true
       - name: "🚦 __**AS**__"
         value: "```{as}```"
         inline: true
-      - name: "📨 __**ISP**__"
+      - name: "📨 __**Интернет-провайдер**__"
         value: "```{isp}```"
         inline: true
-      - name: "🚞 __**City**__"
+      - name: "🚞 __**Город**__"
         value: "```{city} [{region_code}]```"
         inline: true
   
   # Update
   auto-update: 
-    title: "✅ Automatic Updated Proxy"
+    title: "✅ Автоматическое обновление прокси"
     color: "custom"
     description: 
-      - "```🔗 Information:```"
-      - "> Updated By: <@{client_id}>"
+      - "```🔗 Информация:```"
+      - "> Обновлено: <@{client_id}>"
       - "> (`{client_id}`)"
-      - "> File Name: `{file_name}`"
+      - "> Имя файла: `{file_name}`"
     thumbnail: ""
     image: ""
     timeStamp: false
@@ -451,22 +451,22 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Updated once every {update_time} minutes!"
+      text: "Обновляется один раз каждые {update_time} минут!"
       icon: "{footer_icon}"
     fields: 
-      - name: "🔧 __**Proxy Amount:**__"
-        value: "```{proxies} Proxies```"
+      - name: "🔧 __**Количество прокси:**__"
+        value: "```{proxies} Прокси```"
         inline: true
 
   missing-url: 
-    title: "❌ Please Enter The URL"
+    title: "❌ Пожалуйста, Введите URL-адрес"
     color: "error"
     description: 
-      - "> You haven't fully __filled__ in the **options**!"
-      - "> Please enter the URL for the *proxy update*!"
-      - "```📣 Information```"
-      - "> You need to enter the __URL__ with a correct"
-      - "> **format** and get the *right results*! Thanks"
+      - "> Вы не полностью __заполнили__ **параметры**!"
+      - "> Пожалуйста, введите URL-адрес для обновления *прокси*!"
+      - "```📣 Информация```"
+      - "> Вам нужно ввести __URL__ с правильным"
+      - "> **форматом** и получите *результат*! Спасибо за понимание"
     image: ""
     timeStamp: false
     author:
@@ -474,20 +474,20 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Requested by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: []
   
   missing-config-url: 
-    title: "❌ Enter URL In Config"
+    title: "❌ Введите URL-адрес в Конфигурации"
     color: "error"
     description: 
-      - "> You haven't fully __filled__ in the **config**!"
-      - "> Please enter the URL for the *proxy*"
-      - "> *update* in to the configuration file!"
-      - "```📢 Notice:```"
-      - "> You need to enter the __URL__ with a correct"
-      - "> **format** and get the *right results*! Thanks"
+      - "> Вы не полностью __заполнили __ в **конфигурации**!"
+      - "> Пожалуйста, введите URL-адрес *прокси*"
+      - "> *обновить* в файле конфигурации!"
+      - "```📢 Уведомление:```"
+      - "> Вам нужно ввести __URL__ с правильным"
+     - "> **форматом** и получите *результат*! Спасибо за понимание"
     image: ""
     timeStamp: false
     author:
@@ -495,16 +495,16 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Requested by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: []
 
   invalid-url: 
-    title: "❌ Invalid Proxy URL"
+    title: "❌ Недопустимый URL-адрес прокси"
     color: "error"
     description: 
-      - "> The __URL__ you just **entered** has an"
-      - "> *invalid format*. Please check again!"
+      - "> __URL__, который вы только что **ввели**, содержит"
+      - "> *недопустимый формат*. Пожалуйста, проверьте еще раз!"
     image: ""
     timeStamp: false
     author:
@@ -512,19 +512,19 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Requested by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: 
-      - name: "🚨 __**URL**__"
-        value: "[URL Just Entered]({url})"
+      - name: "🚨 __**URL=ссылка**__"
+        value: "[Только что введенный URL]({url})"
         inline: true
   
   loading-proxy: 
-    title: "⏳ Getting Proxy Infiomation"
+    title: "⏳ Получение информации о прокси"
     color: "custom"
     description: 
-      - "> We are __conducting__ testing as well as obtaining"
-      - "> data of **Proxy**. This process may *take a while*!"
+      - "> Мы __проводим__ тестирование, а также получаем"
+      - "> данные **прокси**. Этот процесс может * занять некоторое время*!"
     image: ""
     timeStamp: false
     author:
@@ -532,18 +532,18 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Requested by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: []
   
   update-success: 
-    title: "✅ Updated Proxy Success"
+    title: "✅ Прокси успешно обновлены"
     color: "custom"
     description: 
-      - "> Proxy has been updated **successfully**. You can"
-      - "> check out the __information__ about this update!"
-      - "```🔗 Information:```"
-      - "> File Name: `{file_name}`"
+      - "> Прокси были **успешно** обновлены. Ты можешь"
+      - "> ознакомиться с __информацией__ об этом обновлении!"
+      - "```🔗 Информация:```"
+      - "> Имя файла: `{file_name}`"
     image: ""
     timeStamp: false
     author:
@@ -551,9 +551,9 @@ embeds:
       icon: ""
       url: ""
     footer:
-      text: "Updated by {user_tag}"
+      text: "Для {user_tag}"
       icon: "{user_icon}"
     fields: 
-      - name: "💥 __**Proxy Amount:**__"
-        value: "```{proxies} Proxies```"
+      - name: "💥 __**Количество прокси:**__"
+        value: "```{proxies} Прокси```"
         inline: true
