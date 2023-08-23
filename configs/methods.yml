@@ -16,6 +16,7 @@ general:
 black-list-ip: 
   - "1.1.1.1"
   - "127.0.0.1"
+  - "play.squadcube.tk"
 
 version-code: 
   - version: "1.19.1"
@@ -78,3 +79,8 @@ methods:
     enabled: true 
     roles: []
     run-bat: "{path} -Dperdelay=5000 -Ddelay=1 -Drmnwp=false -jar MCSTORM.jar {host}:{port} {version} botjoiner {time} -1"
+  - name: "Ram"
+    id: "ram"
+    enabled: true
+    roles: []
+    run-bat: "{path} -Dperdelay=5000 -Ddelay=1 -Drmnwp=false -jar MCSTORM.jar {host}:{port} {version} ram {time} -1"
