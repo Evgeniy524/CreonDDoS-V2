@@ -9,7 +9,7 @@ const { translateColors } = require("./extra/consoleColor");
  
 require('console-stamp')(console, {
     label: true,
-    format: ':date(dd/mm/yyyy HH:MM:ss) :label',
+    format: ':date(dd/mm/yyyy ss:MM:HH) :label',
     colors: {
         stamp: 'gray'
     }
