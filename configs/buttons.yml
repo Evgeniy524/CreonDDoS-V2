@@ -1,7 +1,7 @@
 buttons: 
   confirm-stop: 
-    customId: "hexbot-confirmstop"
-    label: "Confirm"
+    customId: "creonbot-confirmstop"
+    label: "Подтвердить"
     style: "success"
     disabled: false 
     url: ""
@@ -10,8 +10,8 @@ buttons:
       id: "✅"
   
   stop-attacked: 
-    customId: "hexbot-stopattacked" 
-    label: "Stop Attack"
+    customId: "creonbot-stopattacked" 
+    label: "Остановить атаку"
     style: "danger"
     disabled: false 
     url: ""
