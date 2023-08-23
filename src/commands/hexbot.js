@@ -4,55 +4,55 @@ const utils = require("../modules/utils");
 
 module.exports = {
     data: new Discord.SlashCommandBuilder()
-        .setName("hexbot")
-        .setDescription("Main command for HexBot usage!")
+        .setName("creonbot")
+        .setDescription("Основная команда для использования CreonDDoS!")
         .addSubcommand(sc =>
             sc.setName("crash")
-                .setDescription("Send powerful attacks to the server!")
+                .setDescription("Отправляйте мощные атаки на сервер!")
                 .addStringOption(
                     o => o.setName("ip")
-                        .setDescription("The ip address of the server to attack!")
+                        .setDescription("IP-адрес сервера для атаки!")
                         .setRequired(true)
                 ).addNumberOption(
                     o => o.setName("port")
-                        .setDescription("The port of the server to attack!")
+                        .setDescription("Порт сервера для атаки!")
                         .setRequired(true)
                 ).addNumberOption(
                     o => o.setName("version")
-                        .setDescription("The version of the server to attack!")
+                        .setDescription("Версия сервера для атаки!")
                         .setAutocomplete(true)
                         .setRequired(true)
                 ).addStringOption(
                     o => o.setName("method")
-                        .setDescription("Method of attack!")
+                        .setDescription("Метод атаки!")
                         .setAutocomplete(true)
                         .setRequired(true)
                 ).addNumberOption(
                     o => o.setName("time")
-                        .setDescription("Time for attack, in seconds!")
+                        .setDescription("Время для атаки, в секундах!")
                         .setRequired(true)
                 )
         ).addSubcommand(sc =>
             sc.setName("stop")
-                .setDescription("Stop the attacks in progress!")
+                .setDescription("Остановить активные атаки!")
         ).addSubcommand(sc =>
             sc.setName("update")
-                .setDescription("Updated list of proxies for attack!")
+                .setDescription("Обновлен список прокси для атаки!")
                 .addStringOption(o =>
                     o.setName("url")
-                        .setDescription("The url to get proxy for update!")
+                        .setDescription("URL-адрес получения прокси для обновления!")
                         .setMinLength(4)
                 )
         ).addSubcommand(sc =>
             sc.setName("resolver")
-                .setDescription("Check the server's information!")
+                .setDescription("Проверьте информацию о сервере!")
                 .addStringOption(o =>
                     o.setName("ip-address")
-                        .setDescription("The ip address of the server to check!")
+                        .setDescription("IP-адрес сервера для проверки!")
                         .setRequired(true)
                 ).addStringOption(o =>
                     o.setName("platform")
-                        .setDescription("The platform of the server to check!")
+                        .setDescription("Платформа сервера для проверки!")
                         .setRequired(true)
                         .addChoices(
                             { name: "Java", value: "java" },
@@ -61,10 +61,10 @@ module.exports = {
                 )
     ).addSubcommand(sc =>
         sc.setName("whois")
-            .setDescription("Make a query for a domain name!")
+            .setDescription("Сделайте запрос на доменное имя!")
             .addStringOption(o =>
                 o.setName("domain-name")
-                    .setDescription("The domain name to make the query!")
+                    .setDescription("Доменное имя для выполнения запроса!")
                     .setRequired(true)
             )
     ),
